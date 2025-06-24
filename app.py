@@ -19,7 +19,7 @@ if uploaded_file is not None:
             # For Excel: read first sheet by default
             df = pd.read_excel(uploaded_file)
         
-        st.success("✅ File successfully loaded!")
+        st.success("File successfully loaded!")
         st.write("### Data Preview", df.head())
 
     except Exception as e:
